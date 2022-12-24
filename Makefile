@@ -1,5 +1,5 @@
 docker:
-	docker-compose up -d
+	docker-compose up -d --no-deps --build
 
 down:
 	docker-compose down
@@ -18,7 +18,13 @@ frontend:
 
 data:
 	pip install -r requirements.txt
-	cd setup && python importer.py
+	cd setup && python3 importer.py
+
+log:
+	docker logs --tail 50 --follow meilisearch
+
+kill:
+	sudo docker rm $(sudo docker ps -aq)
 
 .PHONY: clean
 clean:
