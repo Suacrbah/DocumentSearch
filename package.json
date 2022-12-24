@@ -1,56 +1,56 @@
 {
-  "name": "nobel-prizes",
-  "description": "Front-end to showcase search in nobel prizes with MeiliSearch.",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "start": "node setup/setup.js",
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
-  },
-  "dependencies": {
-    "@meilisearch/instant-meilisearch": "^0.10.1",
-    "instantsearch.css": "7.4.5",
-    "meilisearch": "^0.30.0",
-    "vue": "^2.6.12",
-    "vue-instantsearch": "^4.6.0"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-eslint": "4.1.1",
-    "@vue/cli-service": "4.5.12",
-    "babel-eslint": "^10.0.3",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^6.0.1",
-    "vue-template-compiler": "^2.6.11"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
+    "name": "nobel-prizes",
+    "description": "Front-end to showcase search in nobel prizes with MeiliSearch.",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build",
+        "lint": "vue-cli-service lint"
     },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
+    "dependencies": {
+        "@meilisearch/instant-meilisearch": "^0.10.1",
+        "instantsearch.css": "7.4.5",
+        "meilisearch": "^0.30.0",
+        "vue": "^2.6.12",
+        "vue-instantsearch": "^4.6.0",
+        "algoliasearch": "3.32.0"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-eslint": "4.1.1",
+        "@vue/cli-service": "4.5.12",
+        "babel-eslint": "^10.0.3",
+        "eslint": "^6.7.2",
+        "eslint-plugin-vue": "^6.0.1",
+        "vue-template-compiler": "^2.6.11"
+    },
+    "eslintConfig": {
+        "root": true,
+        "env": {
+            "node": true
+        },
+        "extends": [
+            "plugin:vue/essential",
+            "eslint:recommended"
+        ],
+        "rules": {},
+        "parserOptions": {
+            "parser": "babel-eslint"
+        }
+    },
+    "postcss": {
+        "plugins": {
+            "autoprefixer": {}
+        }
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not ie <= 8"
     ],
-    "rules": {},
-    "parserOptions": {
-      "parser": "babel-eslint"
-    }
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
-    }
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ],
-  "keywords": [
-    "demo",
-    "vue"
-  ],
-  "author": "Charlotte Vermandel"
+    "keywords": [
+        "demo",
+        "vue"
+    ],
+    "author": "Charlotte Vermandel"
 }
